@@ -41,25 +41,40 @@
   <p class="lead">A URI scheme used to denote files stored on computers connected to the eDonkey filesharing P2P network. E.g. <code>ed2k://|file|%E5%AF%84%E7...</code></p>
   <button data-clipboard-text="/^ed2k:\/\/\|file\|.+\|\/$/" class="copy">/^ed2k:\/\/\|file\|.+\|\/$/</button>
 </article>
+<article class="regex guid uuid">
+  <header><h2>GUID/UUID</h2></header>
+  <p class="lead">Regex pattern to match GUID/UUID. E.g. <code>e155518c-ca1b-443c-9be9-fe90fdab734</code></p>
+  <button data-clipboard-text="/^[a-f\d]{4}(?:[a-f\d]{4}-){4}[a-f\d]{12}$/i" class="copy">/^[a-f\d]{4}(?:[a-f\d]{4}-){4}[a-f\d]{12}$/i</button>
+</article>
+<article class="regex html">
+  <header><h2>HTML Comment</h2></header>
+  <p class="lead">Regex pattern to match HTML comments. E.g. <code>&lt;!--&lt;div class="demo"&gt;&lt;/div&gt;--&gt;</code></p>
+  <button data-clipboard-text="/^<!--[\s\S]*?-->$/" class="copy">/^&lt;!--[\s\S]*?--&gt;$/</button>
+</article>
 <article class="regex imei">
   <header><h2>IMEI Number</h2></header>
-  <p class="lead">International Mobile Equipment Identity is a unique 15- or 17-digit code. E.g. <code>123456789012345</code>.</p>
+  <p class="lead">International Mobile Equipment Identity is a unique 15- or 17-digit code. E.g. <code>123456789012345</code></p>
   <button data-clipboard-text="/^\d{15,17}$/" class="copy">/^\d{15,17}$/</button>
 </article>
 <article class="regex linux unix file">
   <header><h2>Linux File Path</h2></header>
-  <p class="lead">Regex pattern to validate Linux file path. E.g. <code>/root/b.ts</code>.</p>
+  <p class="lead">Regex pattern to validate Linux file path. E.g. <code>/root/b.ts</code></p>
   <button data-clipboard-text="/^\/(?:[^/]+\/)*[^/]+$/" class="copy">/^\/(?:[^/]+\/)*[^/]+$/</button>
 </article>
 <article class="regex linux unix file">
   <header><h2>Linux File (Hidden) Path</h2></header>
-  <p class="lead">Regex pattern to validate Linux file (hidden) path. E.g. <code>/root/.gitignore</code>.</p>
+  <p class="lead">Regex pattern to validate Linux file (hidden) path. E.g. <code>/root/.gitignore</code></p>
   <button data-clipboard-text="/^\/(?:[^/]+\/)*\.[^/]*/" class="copy">/^\/(?:[^/]+\/)*\.[^/]*/</button>
 </article>
 <article class="regex linux unix folder">
   <header><h2>Linux Folder Path</h2></header>
-  <p class="lead">Regex pattern to validate Linux folder path. E.g. <code>/usr/ad/dd/</code>.</p>
+  <p class="lead">Regex pattern to validate Linux folder path. E.g. <code>/usr/ad/dd/</code></p>
   <button data-clipboard-text="/^\/(?:[^/]+\/)*$/" class="copy">/^\/(?:[^/]+\/)*$/</button>
+</article>
+<article class="regex md5 hash">
+  <header><h2>MD5 (32-bit)</h2></header>
+  <p class="lead">Regex pattern to match MD5 hashes. E.g. <code>21fe181c5bfc16306a6828c1f7b762e8</code></p>
+  <button data-clipboard-text="/^([a-f\d]{32}|[A-F\d]{32})$/" class="copy">/^([a-f\d]{32}|[A-F\d]{32})$/</button>
 </article>
 <article class="regex ip subnetwork">
   <header><h2>Subnetwork</h2></header>
@@ -68,22 +83,27 @@
 </article>
 <article class="regex url">
   <header><h2>URL</h2></header>
-  <p class="lead">Supports port number, hash(#), and parameter(&). E.g. https://jquery.app/#/a=1&b=2.</p>
+  <p class="lead">Supports port number, hash(#), and parameter(&). E.g. <code>https://jquery.app/#/a=1&b=2</code></p>
   <button data-clipboard-text="/^(((ht|f)tps?):\/\/)?[\w-]+(\.[\w-]+)+([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?$/" class="copy">/^(((ht|f)tps?):\/\/)?[\w-]+(\.[\w-]+)+([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?$/</button>
 </article>
 <article class="regex url port">
   <header><h2>URL With Port</h2></header>
-  <p class="lead">Regex to match url with port number. E.g. https://jquery.app:8080.</p>
+  <p class="lead">Regex to match url with port number. E.g. <code>https://jquery.app:8080</code></p>
   <button data-clipboard-text="/^((ht|f)tps?:\/\/)?[\w-]+(\.[\w-]+)+:\d{1,5}\/?$/" class="copy">/^((ht|f)tps?:\/\/)?[\w-]+(\.[\w-]+)+:\d{1,5}\/?$/</button>
+</article>
+<article class="regex version number">
+  <header><h2>Version Numbers</h2></header>
+  <p class="lead">Regex pattern to match version numbers. E.g. <code>'16.3.10'</code></p>
+  <button data-clipboard-text="/^\d+(?:\.\d+){2}$/" class="copy">/^\d+(?:\.\d+){2}$/</button>
 </article>
 <article class="regex windows file">
   <header><h2>Windows File Path</h2></header>
-  <p class="lead">Regex pattern to validate Windows file path. E.g. <code>C:\\Users\\Administrator\\Desktop\\1.link</code>.</p>
+  <p class="lead">Regex pattern to validate Windows file path. E.g. <code>C:\\Users\\Administrator\\Desktop\\1.link</code></p>
   <button data-clipboard-text="/^[a-zA-Z]:\\(?:\w+\\)*\w+\.\w+$/" class="copy">/^[a-zA-Z]:\\(?:\w+\\)*\w+\.\w+$/</button>
 </article>
 <article class="regex windows folder">
   <header><h2>Windows Folder Path</h2></header>
-  <p class="lead">Regex pattern to validate Windows folder path. E.g. <code>C:\\Users\\Administrator\\Desktop</code>.</p>
+  <p class="lead">Regex pattern to validate Windows folder path. E.g. <code>C:\\Users\\Administrator\\Desktop</code></p>
   <button data-clipboard-text="/^[a-zA-Z]:\\(?:\w+\\?)*$/" class="copy">/^[a-zA-Z]:\\(?:\w+\\?)*$/</button>
 </article>
 </main>
